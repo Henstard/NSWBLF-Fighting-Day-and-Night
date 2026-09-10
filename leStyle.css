@@ -4,11 +4,11 @@ ul{
 	padding: 0px;
 	text-align: center;
 	margin-top: 0;
-} /*Creates general bar for navigation menu*/
+} 
 ul > li{
 	display: inline-block;
 	transition: 0.3s;
-} /*Blends in options in navigation bar and adds transition*/
+}
 a{
 	padding-inline: 30px;
 	display: inline-block;
@@ -18,7 +18,7 @@ a{
 	padding-bottom: auto;
 	padding-top: auto;
 	font-size: 18px;
-} /*Defines how anchors will look*/
+} 
 
 ul > li > a{
 	padding-top: 20px;
@@ -28,10 +28,6 @@ ul > li > a{
 ul > li > a:hover{
 	transition: 0.5s;
 	text-shadow: 4px 4px 3px #FFFFFF;
-}
-
-.bottomNav > ul > li > a{
-	padding-top: 20px;
 }
 
 #home{
@@ -81,16 +77,7 @@ body{
 	text-align: center;
 	z-index: 1;
 }
-.bottomNav{
-	border-top: 2px solid white;
-	background-image: url("nightBackground.webp");
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	text-align: center;
-	
-}
+
 @keyframes slideIn{
 	from {
         transform: translateX(-100%);
@@ -109,7 +96,6 @@ body{
     }
 
     100% {
-		transform: rotateZ(25deg);
         transform: translateX(0%);
 		transform: translateY(0%);
         opacity: 1;
@@ -125,41 +111,6 @@ body{
 	top: 0;
 
 }
-
-#Owens{
-	display: inline;
-
-}
-
-#Mundey{
-	display: inline;
-
-}
-#Pringle{
-	display: inline;
-
-
-}
-
-#OwensText{
-	background-image: url(joeOwens.png);
-	background-size: cover;
-	display: none;
-	height: 360px;
-	width: 300px;
-}
-
-#MundeyText{
-	display: none;
-
-}
-
-#PringleText{
-	display: none;
-
-}
-
-
 
 .theImage{
 	height: 360px;
@@ -184,13 +135,6 @@ body{
 
 }
 
-.theReplacement{
-	display: none;
-	height: 360px;
-	width: 300px;
-}
-
-
 #theLeaders{
 	background-image: url("images-4.jpg");
 	background-size: cover;
@@ -203,7 +147,6 @@ body{
 
 }
 
-
 @keyframes fading{
 	from {
 		opacity: 0;
@@ -213,15 +156,7 @@ body{
 		opacity: 1;
 	}
 }
-/* below are the panel ones
 
-*/
-.left{
-	position: fixed;
-	left: 10px;
-	top: 50%;
-	font-size: 24px;
-}
 .right{
 	position: fixed;
 	right: 10px;
@@ -236,6 +171,16 @@ body{
 
 .panelCol{
 	color: white;
+	display: inline-block;
+	width: 500px;
+	padding: 30px;
+	text-align: left;
+}
+
+
+.panelColDay{
+	color: black;
+	text-shadow: 4px 4px 3px #FFFFFF;
 	display: inline-block;
 	width: 500px;
 	padding: 30px;
@@ -292,29 +237,42 @@ body{
 }
 
 .secondNightBG{
-	background-image: url("third.png");
+	background-image: url("second.png");
 	background-size: cover;
 	background-attachment: fixed;
 }
 
 .thirdNightBG{
 	
-	background-image: url("second.png");
+	background-image: url("third.png");
 	background-size: cover;
 	background-attachment: fixed;
 }
 
-.small{
-	width: 20%;
-	height: 20%;
-	position: inline-block;
+.firstDayBG{
+	background-image: url("firstDay.png");
+	background-size: cover;
+	background-attachment: fixed;
 }
+
+.secondDayBG{
+	background-image: url("secondDay.png");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.thirdDayBG{
+	
+	background-image: url("thirdDay.png");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
 
 .medium{
 	width: 60%;
 	height: 60%;
 }
-
 
 
 tr{
